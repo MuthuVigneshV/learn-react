@@ -40,7 +40,7 @@ function Home() {
                 <h2>Frontend Developer || Freelancer</h2>
                 )}
                 {loading ? <Skeleton height={30} width={350}/>:(
-                <p>Welcome to My Website! I appreciate your interest and want to know more about me check my resume and my projects.Looking forward to connect with you.</p>
+                <p>Welcome to my website! I appreciate your interest. If you'd like to know more about me, feel free to check out my resume and projects. I'm looking forward to connecting with you!</p>
                 )}
                 <div className='home_btn_container'>
                     {loading ? <Skeleton circle={true} height={100} width={100}/>:(
