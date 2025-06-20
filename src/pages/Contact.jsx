@@ -15,7 +15,7 @@ function Contact() {
 
     return (
         <div className='contact'>
-            <form className='contact_details'>
+            <form action="https://formsubmit.co/6d1008c2fb52a6148d16208cccd0d6c5" method="POST" className='contact_details'>
                 <div>
                     {loading ? <Skeleton height={50} width={320}/>: (
                         <input placeholder='Name' type='text' required/>

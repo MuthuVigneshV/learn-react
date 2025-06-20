@@ -28,7 +28,7 @@ function Home() {
         <div className='home_section'>
             <div className='home_image_container'>
                 { loading ? <Skeleton circle={true} height={300} width={300} /> : (
-                <img src='https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg' className='home_image'/>
+                <img src='myprofimg.jpg' className='home_image'/>
                 )}
             </div>
             
@@ -44,7 +44,7 @@ function Home() {
                 )}
                 <div className='home_btn_container'>
                     {loading ? <Skeleton circle={true} height={100} width={100}/>:(
-                    <a href='' download>
+                    <a href='Muthu_Vignesh_Resume.pdf' download>
                         <button className='resume_btn'>Resume</button>
                     </a>
                     )}

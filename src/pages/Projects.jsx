@@ -16,12 +16,25 @@ function Projects() {
     <div className='projects'>
       <h1>{loading ? <Skeleton width={200} /> : 'Projects'}</h1>
       <div className='projects_container'>
-        {(loading ? Array(3).fill(0) : [1, 2, 3]).map((_, i) => (
+        {(loading ? Array(4).fill(0) : [1, 2, 3, 4]).map((_, i) => (
           <div className='projects_inner_container' key={i}>
             <div className='projects_content'>
               <h2>{loading ? <Skeleton width={150} /> : projectTitles[i]}</h2>
               <p>{loading ? <Skeleton count={3} /> : projectDescriptions[i]}</p>
-              <button>{loading ? <Skeleton width={60} height={30} /> : 'View'}</button>
+              {loading ? (
+                <button>
+                  <Skeleton width={60} height={30} />
+                </button>
+              ) : i === 3 ? (
+                <a href={projectLinks[i]} download>
+                  <button>Download</button>
+                </a>
+              ) : (
+                <a href={projectLinks[i]} target='_blank' rel='noopener noreferrer'>
+                  <button>View</button>
+                </a>
+              )}
+
             </div>
             <div className='projects_image'>
               {loading ? (
@@ -40,12 +53,20 @@ function Projects() {
   )
 }
 
-const projectTitles = ['Food Munch', 'Pet Connect', 'Portfolio Website']
+const projectTitles = ['Food Munch', 'Pet Connect', 'Portfolio Website', 'Todo App']
 
 const projectDescriptions = [
   'A food ordering static website built using HTML, CSS.',
   'PetConnect is a comprehensive pet health care app that monitors and provides insights into pet health.',
-  "I've created a personal portfolio using React to showcase my skills and projects."
+  "I've created a personal portfolio using React to showcase my skills and projects.",
+  "A simple and responsive ToDo application built with React that allows users to add, delete, and manage their daily tasks efficiently."
+]
+
+const projectLinks = [
+  'https://mv-food-munch.netlify.app/',
+  'https://mv-pet-connect.netlify.app/',
+  '/',
+  'todo-app.apk'
 ]
 
 export default Projects
