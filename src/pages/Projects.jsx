@@ -25,7 +25,7 @@ function Projects() {
                 <button>
                   <Skeleton width={60} height={30} />
                 </button>
-              ) : i === 3 ? (
+              ) : i === 4 ? (
                 <a href={projectLinks[i]} target='_blank' download>
                   <button>Download</button>
                 </a>
