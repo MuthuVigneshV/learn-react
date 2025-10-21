@@ -16,7 +16,7 @@ function Projects() {
     <div className='projects'>
       <h1>{loading ? <Skeleton width={200} /> : 'Projects'}</h1>
       <div className='projects_container'>
-        {(loading ? Array(4).fill(0) : [1, 2, 3, 4]).map((_, i) => (
+        {(loading ? Array(5).fill(0) : [1, 2, 3, 4, 5]).map((_, i) => (
           <div className='projects_inner_container' key={i}>
             <div className='projects_content'>
               <h2>{loading ? <Skeleton width={150} /> : projectTitles[i]}</h2>
@@ -53,12 +53,13 @@ function Projects() {
   )
 }
 
-const projectTitles = ['Food Munch', 'Pet Connect', 'Portfolio Website', 'Todo App']
+const projectTitles = ['Food Munch', 'Pet Connect', 'Portfolio Website', 'shopWith', 'Todo App']
 
 const projectDescriptions = [
   'A food ordering static website built using HTML, CSS.',
   'PetConnect is a comprehensive pet health care app that monitors and provides insights into pet health.',
   "I've created a personal portfolio using React to showcase my skills and projects.",
+  "A basic ECOM website using react JS ...",
   "A simple and responsive ToDo application built with React that allows users to add, delete, and manage their daily tasks efficiently."
 ]
 
@@ -66,6 +67,7 @@ const projectLinks = [
   'https://mv-food-munch.netlify.app/',
   'https://mv-pet-connect.netlify.app/',
   '/',
+  'https://shopwith-mv.netlify.app/',
   'https://drive.google.com/uc?export=download&id=1yNo8nHo-2AzikQtqHn-u-V5tcJrTYc1w'
 ]
 
