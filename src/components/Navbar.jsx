@@ -29,6 +29,10 @@ function Navbar() {
                 <hr/>
                 </div>
                 <div className='navitems'>
+                    <Link to="/about">About</Link>
+                <hr/>
+                </div>
+                <div className='navitems'>
                     <Link to="/projects">Projects</Link>
                 <hr/>
                 </div>

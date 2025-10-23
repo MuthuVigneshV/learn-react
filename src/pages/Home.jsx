@@ -1,5 +1,6 @@
 import React from 'react'
 import Projects from './Projects'
+import About from './About'
 import Skeleton from 'react-loading-skeleton'
 import { useState, useEffect } from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'

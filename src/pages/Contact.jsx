@@ -47,7 +47,7 @@ function Contact() {
                 <p>Looking forward to connect with you.!</p>
                 <div>
                     <strong><h2>Phone</h2></strong>
-                    <p>8220832037</p>
+                    <p>+91 8220832037</p>
                 </div>
                 <div>
                     <strong><h2>Email</h2></strong>
